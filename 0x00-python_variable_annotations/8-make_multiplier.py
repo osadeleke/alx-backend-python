@@ -9,9 +9,9 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
     Complex types - functions
     """
-    def inner_multiplier(multiplier: float) -> float:
+    def inner_multiplier(f: float) -> float:
         """
         Complex types - functions
         """
-        return multiplier * multiplier
+        return f * multiplier
     return inner_multiplier
